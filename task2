@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+//        В чемпионате по футболу команде за выигрыш дается 3 очка, за проигрыш — 0, 
+//        за ничью — 1. Известно количество очков, полученных командой за игру. 
+//        Определить словесный результат игры (выигрыш, проигрыш или ничья).
+
+        System.out.println("Введите количество очков из 0,1,3");
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        sc.close();
+
+        if (x == 0) {
+            System.out.print("Проигрыш");
+        } else if (x == 1) {
+            System.out.print("Ничья");
+        } else if (x == 3) {
+            System.out.print("Выигрыш");
+        } else {
+            System.out.print("Введите некорректное значение");
+        }
+
+    }
+}
