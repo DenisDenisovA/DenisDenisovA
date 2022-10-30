@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+//        . Дано двузначное число. Определить: остаток от деления десятков на единицы,
+//        результат деления единиц на десятки
+        System.out.println("Введите двухзначное число");
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+        sc.close();
+
+        int y=(x/10)*10;//десятки- 30
+        double z=x%10;// единицы 7
+        double c= y%z;//остаток от деления 30/7
+        double n=z/y;
+
+        System.out.println("Остаток деления десятков на единицы составляет: "+c);
+        System.out.print("Результат деления единиц на десятки составляет: "+n);
+
+        }
+
+        }
