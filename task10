@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+//        Составить программу вывода любого числа любое заданное число раз
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите любое число");
+        int x = in.nextInt();
+        System.out.println("Введите количество раз вывода введенного числа");
+        int y = in.nextInt();
+        for (int z = 0; z < y; z++) {
+            System.out.print(x + " ");
+
+
+        }
+    }
+}
