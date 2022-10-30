@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+//        Даны стороны двух треугольников. Найти сумму их периметров и сумму их площадей. 
+//        (Определить процедуру для расчета периметра и площади треугольника по его сторонам.)
+        
+        System.out.println("Введите три значения сторон первого треугольника");
+        Scanner sc = new Scanner(System.in);
+        Double x_1 = sc.nextDouble();
+        double y_1 = sc.nextDouble();
+        double z_1 = sc.nextDouble();
+        double p_1 = x_1 + y_1 + z_1;
+        System.out.println("Периметр первого треугольника составляет = " + p_1);
+
+        double pp_1 = (x_1 + y_1 + z_1) / 2;
+        double s_1 = Math.sqrt(pp_1 * (pp_1 - x_1) * (pp_1 - y_1) * (pp_1 - z_1));
+        System.out.printf("Площадь первого треугольника составляет = " + "%.4f \n", s_1);
+        System.out.println();
+
+        System.out.println("Введите три значения сторон второго треугольника");
+        Double x_2 = sc.nextDouble();
+        double y_2 = sc.nextDouble();
+        double z_2 = sc.nextDouble();
+        double p_2 = x_2 + y_2 + z_2;
+        System.out.println("Периметр второго треугольника составляет = " + p_2);
+
+        double pp_2 = (x_2 + y_2 + z_2) / 2;
+        double s_2 = Math.sqrt(pp_2 * (pp_2 - x_2) * (pp_2 - y_2) * (pp_2 - z_2));
+        System.out.printf("Площадь второго треугольника составляет = " + "%.4f \n", s_2);
+        System.out.println();
+
+        double n = p_1 + p_2;
+        System.out.println("Сумма периметров двух треугольников составляет = " + n);
+        double l = s_1 + s_2;
+        System.out.printf("Сумма площадей двух треугольников составляет = " + "%.4f \n", l);
+
+    }
+    }
+
