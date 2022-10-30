@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+//        Напечатать таблицу соответствия между весом в фунтах и весом в килограммах
+//        для значений 1, 2, ..., 10 фунтов (1 фунт = 453 г)
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите количество фунтов");
+        double funt = in.nextInt();
+        for (int x = 0; x < 10; x++) {
+            ;
+            double kg = (453 * funt) / 1000;
+            System.out.println(funt++ + " фунт(ов) = " + kg + " килограмма");
+
+        }
+    }
+
+}
