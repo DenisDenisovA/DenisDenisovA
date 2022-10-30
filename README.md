@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @DenisDenisovA
 - 👀 I’m interested in IT
-- 🌱 I’m currently learning https://learn.innopolis.university/Students
+- 🌱 I’m currently learning https://learn.innopolis.university
 
 - 📫 How to reach me https://t.me/Denis_DA
 
