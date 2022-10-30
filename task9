@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+//        Напечатать числа в виде следующей таблицы:
+//        12...10
+//        12...10
+//        12...10
+//        12...10
+
+        Exchange(1, 0);
+        System.out.println();
+        Exchange(1, 0);
+        System.out.println();
+        Exchange(1, 0);
+        System.out.println();
+        Exchange(1, 0);
+    }
+
+    public static void Exchange(int x, int y) {
+        if (y < 10) {
+            y++;
+            System.out.print(y);
+            Exchange(x, y);
+
+
+        }
+    }
+}
