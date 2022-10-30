@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+
+//        Вычислить сумму 1+1/2+1/3+...+1/n.
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите число 'n' для расчета по формуле 1+1/2+1/3+...+1/n");
+        int number = in.nextInt();
+        double y = 1;
+        double z=0;
+        for (int x = 1; x < number; x++) {
+            y++;
+            z=z+(1/y);
+        }System.out.printf("Результат = %.2f\n",z+1);
+    }
+}
