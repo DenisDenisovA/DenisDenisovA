@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class denis {
+    public static void main(String[] args) {
+//        Даны три вещественных числа a, b, c. Проверить:
+//        1. выполняется ли неравенство a < b < c;
+//        2. выполняется ли неравенство b > a > c.
+                System.out.println("Введите три вещественных числа ");
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        sc.close();
+        if (a < b || b < c) {
+            System.out.print("выполняется неравенство a < b < c");
+        } else {
+            System.out.print("выполняется неравенство b > a > c");
+        }
+
+        }
+
+        }
+
