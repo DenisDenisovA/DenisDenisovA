@@ -1,0 +1,64 @@
+package Demo;
+
+import java.net.SocketTimeoutException;
+import java.util.SortedMap;
+
+import static Demo.Phone.count;
+
+public class main {
+    public static void main(String[] args) {
+        Phone Phone1 = new Phone();
+        Phone1.setNumber(1);
+        Phone1.setModel("Iphone_5s");
+        Phone1.setWeight(500);
+        Phone1.name = "Иван";
+        Phone1.setNumberphone(12345);
+
+        System.out.println();
+        Phone1.receiveCall();
+        System.out.println(" с телефона № " + Phone1.getNumberphone());
+        System.out.println("Телефон №" + Phone1.getnumber());
+        System.out.println("Модель телефона: " + Phone1.getmodel());
+        System.out.println("Вес телефона: " + Phone1.getweight());
+        count++;
+
+        System.out.println();
+
+        Phone Phone2 = new Phone();
+        Phone2.setNumber(2);
+        Phone2.setModel("Iphone_6");
+        Phone2.setWeight(600);
+        Phone2.name = "Михаил";
+        Phone2.setNumberphone(32165);
+
+        System.out.println();
+        Phone2.receiveCall();
+        System.out.println(" с телефона № " + Phone2.getNumberphone());
+        System.out.println("Телефон №" + Phone2.getnumber());
+        System.out.println("Модель телефона: " + Phone2.getmodel());
+        System.out.println("Вес телефона: " + Phone2.getweight());
+        count++;
+
+        System.out.println();
+
+        Phone Phone3 = new Phone();
+        Phone3.setNumber(3);
+        Phone3.setModel("Iphone_7");
+        Phone3.setWeight(650);
+        Phone3.name = "Константин";
+
+        Phone3.setNumberphone(45879);
+
+        System.out.println();
+        Phone3.receiveCall();
+        System.out.println(" с телефона № " + Phone3.getNumberphone());
+        System.out.println("Телефон №" + Phone3.getnumber());
+        System.out.println("Модель телефона: " + Phone3.getmodel());
+        System.out.println("Вес телефона: " + Phone3.getweight());
+        count++;
+
+        System.out.println();
+        System.out.println("Всего телефонов: " + count);
+
+    }
+}
