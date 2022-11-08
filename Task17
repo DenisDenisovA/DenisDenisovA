@@ -1,0 +1,35 @@
+import java.util.Random;
+
+public class denis {
+    public static void main(String[] args) {
+        
+//        Дан массив. Вывести на экран сначала его неотрицательные элементы, затем
+//        отрицательные.
+        int[] array = new int[12];//создаем массив
+        Random x = new Random();
+
+        for (int i = 0; i < array.length; i++)//инициализируем массив
+            array[i] = x.nextInt(-9, 9);
+
+        System.out.println("Весь массив:");
+        for (int i = 0; i < array.length; i++) {//выводим все числа массива
+                System.out.print(+array[i] + "  ");}
+        System.out.println();
+
+        System.out.println("Неотрицательные числа:");
+        for (int i = 0; i < array.length; i++) {//выводим неотрицательные числа
+            if (array[i] > 0) {
+                System.out.print(array[i] + "  ");
+            }
+        }
+        System.out.println();
+        System.out.println("Отрицательные числа:");
+        for (int i = 0; i < array.length; i++) {//выводим отрицательные числа
+            if (array[i] < 0) {
+                System.out.print(array[i] + "  ");
+            }
+        }
+
+
+    }
+}
