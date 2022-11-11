@@ -1,0 +1,35 @@
+import java.util.Random;
+
+public class denis {
+    public static void main(String[] args) {
+
+//        Дан массив. Определить:
+//        1. нахождения минимального значения среди элементов любой строки
+//        двумерного массива;
+//        2. нахождения максимального значения среди элементов любого столбца
+//        двумерного массива
+        Random x = new Random();
+        int[][] arrays2d = new int[x.nextInt(3, 7)][x.nextInt(3, 7)];
+        for (int y = 0; y < arrays2d.length; y++) {
+            for (int j = 0; j < arrays2d[y].length; j++) {
+                arrays2d[y][j] = x.nextInt(-50, 50);
+                System.out.print(arrays2d[y][j] + "  ");
+            }
+            System.out.println();
+        }
+        int max = 0;
+        int min = 0;
+        for (int z = 0; z < arrays2d.length; z++) {
+            for (int s = 0; s < arrays2d[z].length; s++) {
+                if (arrays2d[z][s] > max) {
+                    max = arrays2d[z][s];
+                }
+                if (arrays2d[z][s] < min) {
+                    min = arrays2d[z][s];
+                }
+            }
+        }
+        System.out.println("Максимальное число составляет: " + max);
+        System.out.print("Минимальное число составляет: " + min);
+    }
+}
