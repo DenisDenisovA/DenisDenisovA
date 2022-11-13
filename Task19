@@ -1,0 +1,25 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+
+//Пользователь вводит набор чисел в виде одной строки "1, 2, 3, 4, 4, 5".
+//        Избавиться от повторяющихся элементов в строке.
+//        Вывести результат на экран.
+public class denis {
+    public static void main(String[] args) {
+        System.out.println("Введите значения через запятую");
+
+        Scanner in = new Scanner(System.in);
+        String example = in.next();
+
+        String[] words = example.split(",");
+
+        HashSet<String> x = new HashSet<>();
+        for (int z = 0; z < words.length; z++)
+            x.add(words[z]);
+
+        System.out.println(x);
+    }
+
+}
+
